@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=500, initial-scale=1" />
+
+    <!-- Change this to your name-->
+    <meta name="author" content="Meet Hitesh Sonagara" />
+
+    <title>WEB222 Music App</title>
+    <!-- Classless CSS Stylesheet - https://watercss.kognise.dev/ -->
+    <link rel="stylesheet" href="./css/water.css" />
+    <link rel="stylesheet" href="./css/msonagara.css" />
+  </head>
+  <body>
+    <header>
+    <!-- Change this to your App's info -->
+    <div class="image-container">
+      <img src="logo.png" alt="logo" style="width: 250px; height: 150px">
+    </div>
+    <h1>Musii</h1>
+    <p>Without Limits, Musii..!!</p>
+    </header>
+
+    <nav id="menu"></nav>
+
+    <hr />
+
+    <main>
+      <h2 id="selected-artist"></h2>
+      <section id="cards"></section>
+    </main>
+
+    <footer>
+      <form id="signUp" action="https://httpbin.org/post" method="post">
+        <label>Sign up for new artists and songs!</label>
+        <div id="signUpInputs">
+          <input id="email" type="email" placeholder="example@email.com" name="email" required />
+          <input type="submit" value="Sign Up" name="emailBtn" formtarget="_blank" />
+          <p class="invalidWarning">* Invalid Email Address</p>
+        </div>
+      </form>
+      <div>©MeetSonagara 2024</div>
+    </footer>
+    <!-- JavaScript Data Files -->
+    <script src="./js/artists.js"></script>
+    <script src="./js/songs.js"></script>
+
+    <!-- Main App JavaScript File -->
+    <script src="./js/utils.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

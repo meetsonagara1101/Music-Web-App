@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=500, initial-scale=1" />
+
+    <!-- Change this to your name-->
+    <meta name="author" content="Meet Hitesh Sonagara" />
+
+    <title>WEB222 Music App</title>
+    <!-- Classless CSS Stylesheet - https://watercss.kognise.dev/ -->
+    <link rel="stylesheet" href="./css/water.css" />
+    <link rel="stylesheet" href="./src/css/msonagara.css" />
+  </head>
+  <body>
+    <header>
+      <h1 align="center">Musii - Request Artist</h1>
+      <p align="center">Don't see your favourite artists? Let us know!</p>
+    </header>
+
+    <hr />
+
+    <main><!doctype html>
+        <html lang="en">
+          <head>
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=500, initial-scale=1" />
+        
+            <!-- Change this to your name-->
+            <meta name="author" content="Devendra Kumar Gupta" />
+        
+            <title>WEB222 Music App</title>
+            <!-- Classless CSS Stylesheet - https://watercss.kognise.dev/ -->
+            <link rel="stylesheet" href="./css/water.css" />
+            <link rel="stylesheet" href="./css/dkgupta.css" />
+          </head>
+          <body>
+            <header>
+              <h1 align="center">Dev_Music - Request Artist</h1>
+              <p align="center">Don't see your favourite artists? Let us know!</p>
+            </header>
+        
+            <hr />
+        
+            <main>
+              <form id="requestForm" action="https://httpbin.org/post" method="post">
+                <div id="requestFormFields">
+                  <label>Artist's Name <span>*</span></label>
+                  <input type="text" name="name" required />
+                  <label>Music Genre <span>*</span></label>
+                  <input type="text" list="genreOpt" name="genre" required />
+                  <datalist id="genreOpt">
+                    <option value="Indie"></option>
+                    <option value="Rock"></option>
+                    <option value="Metal"></option>
+                    <option value="Pop"></option>
+                    <option value="Alternative"></option>
+                    <option value="Classical"></option>
+                    <option value="Hip-hop"></option>
+                    <option value="Jazz"></option>
+                    <option value="R&B"></option>
+                    <option value="Dance"></option>
+                    <option value="Folk"></option>
+                  </datalist>
+                  <label>Social Media Links <span>*</span><br />(Separated with commas)</label>
+                  <input
+                    type="text"
+                    name="socialMedias"
+                    placeholder="https://example1.com,..."
+                    required
+                  />
+                  <label class="topLabel">Songs & Videos <span>*</span></label>
+                  <div id="songsVids">
+                    <div>
+                      <input type="text" name="songsVids" required />
+                      <button id="songsVidsAdd">Add</button>
+                    </div>
+                  </div>
+                  <label>Explicit Lyrics</label>
+                  <input type="checkbox" name="explicit" value="1" />
+                  <label class="topLabel">Why this artist should be added <span>*</span></label>
+                  <textarea name="reason" dir="ltr" wrap="SOFT" required></textarea>
+                </div>
+                <div align="center">
+                  <p>* Required Fields</p>
+                  <input type="submit" value="Submit Request" name="requestBtn" formtarget="_blank" />
+                  <p class="invalidWarning">
+                    Please double check the values you entered!<br />Invalid fields are highlighted
+                  </p>
+                </div>
+              </form>
+            </main>
+        
+            <footer>
+              <div>Made by Devendra Kumar Gupta</div>
+            </footer>
+            <!-- Main App JavaScript File -->
+            <script src="./js/utils.js"></script>
+            <script src="./js/request.js"></script>
+          </body>
+        </html>
+        
+      <form id="requestForm" action="https://httpbin.org/post" method="post">
+        <div id="requestFormFields">
+          <label>Artist's Name <span>*</span></label>
+          <input type="text" name="name" required />
+          <label>Music Genre <span>*</span></label>
+          <input type="text" list="genreOpt" name="genre" required />
+          <datalist id="genreOpt">
+            <option value="Indie"></option>
+            <option value="Rock"></option>
+            <option value="Metal"></option>
+            <option value="Pop"></option>
+            <option value="Alternative"></option>
+            <option value="Classical"></option>
+            <option value="Hip-hop"></option>
+            <option value="Jazz"></option>
+            <option value="R&B"></option>
+            <option value="Dance"></option>
+            <option value="Folk"></option>
+          </datalist>
+          <label>Social Media Links <span>*</span><br />(Separated with commas)</label>
+          <input
+            type="text"
+            name="socialMedias"
+            placeholder="https://example1.com,..."
+            required
+          />
+          <label class="topLabel">Songs & Videos <span>*</span></label>
+          <div id="songsVids">
+            <div>
+              <input type="text" name="songsVids" required />
+              <button id="songsVidsAdd">Add</button>
+            </div>
+          </div>
+          <label>Explicit Lyrics</label>
+          <input type="checkbox" name="explicit" value="1" />
+          <label class="topLabel">Why this artist should be added <span>*</span></label>
+          <textarea name="reason" dir="ltr" wrap="SOFT" required></textarea>
+        </div>
+        <div align="center">
+          <p>* Required Fields</p>
+          <input type="submit" value="Submit Request" name="requestBtn" formtarget="_blank" />
+          <p class="invalidWarning">
+            Please double check the values you entered!<br />Invalid fields are highlighted
+          </p>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <div>©MeetSonagara 2024</div>
+    </footer>
+    <!-- Main App JavaScript File -->
+    <script src="./js/utils.js"></script>
+    <script src="./js/request.js"></script>
+  </body>
+</html>
